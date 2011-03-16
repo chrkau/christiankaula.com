@@ -1,5 +1,6 @@
 title: Why web development is done in PHP or Java
 slug: why-web-development-done-php-java
+date: 2011-03-16 18:12
 
 
 These days I'm getting more and more frustrated by my fellow students. It seems everybody is trying to get through with as little work as possible and those who are at least motivated are *very* reluctant to learn any new languages/technologies.

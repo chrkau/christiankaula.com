@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>{% block title %}{{ SITENAME }}{%endblock%}</title>
+	<meta charset="utf-8" />
+	<link rel="stylesheet" type="text/css" href="/theme/css/style.css" />
+	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Arvo:regular,italic,bold,bolditalic" />
+	<link rel='stylesheet' type='text/css' href='http://fonts.googleapis.com/css?family=Inconsolata' />
+</head>
+
+<body id="index" class="home">
+<div id="wrapper">
+	<header id="banner" class="body">
+		<hgroup>
+			<h1><a href="{{ SITEURL }}">{{ SITENAME }} <strong></strong></a></h1>
+			<h2>{{ SITESUBTITLE }}</h2>
+		</hgroup>
+	{% if categories %}
+	<ul id="categories">
+	{% for cat, articles in categories %}
+		<li{% if category == cat %} class="active"{% endif %}><a href="{{ SITEURL }}/category/{{ cat }}.html">{{ cat }}</a></li> 
+	{% endfor %}
+	</ul>
+	{% endif %}
+	</header>
+	<div id="content-wrapper">
+		{% block content %}
+		{% endblock %}
+	</div>
+	<aside id="sidebar">
+		<h2>About me</h2>
+		<p>
+			{# I'm a <a href="/pages/about.html">web developer.</a><br /> #}
+			I'm a web developer.<br />
+			{# I like <a href="/pages/tools.html">tools and technologies</a>.<br /> #}
+			I like to learn new stuff.<br />
+			You can <a href="mailto:chr.kaula@gmail.com">contact me</a>.<br />
+		</p>
+		<h3>Find me on</h3>
+		<ul>
+			<li><a href="https://github.com/chrkau">GitHub</a></li>
+			<li><a href="https://bitbucket.org/chrkau">BitBucket</a></li>
+			<li><a href="http://twitter.com/chrkau">Twitter</a></li>
+			<li><a href="https://www.xing.com/profile/Christian_Kaula">Xing</a></li>
+			<li><a href="http://djangopeople.net/ckau/">Django People</a></li>
+			<li><a href="http://djangogigs.com/developers/christian-kaula/">Djangogigs</a></li>
+		</ul>
+	</aside>
+	<footer id="footer">
+		<address id="about" class="vcard">
+			<div class="adr">
+				<span class="fn">Christian Kaula</span>
+				<span class="street-address">Thieraufstrasse 2</span>
+				<span class="postal-code">95028</span>
+				<span class="locality">Hof</span>
+				<span class="country-name">Germany</span>
+			</div>
+			<div>
+				<a href="mailto:chr.kaula@gmail.com" class="email">chr.kaula@gmail.com</a>
+				<span class="tel"><span class="type">Mobile</span> +49 179 9709833</span>
+			</div>
+			<div>
+				<a href="http://christiankaula.com/" class="url">http://christiankaula.com</a>
+			</div>
+		</address>
+	</footer>
+</div>
+<!-- Piwik --> 
+<script type="text/javascript">
+var pkBaseURL = (("https:" == document.location.protocol) ? "https://piwik.10tok.net/" : "http://piwik.10tok.net/");
+document.write(unescape("%3Cscript src='" + pkBaseURL + "piwik.js' type='text/javascript'%3E%3C/script%3E"));
+</script><script type="text/javascript">
+try {
+var piwikTracker = Piwik.getTracker(pkBaseURL + "piwik.php", 1);
+piwikTracker.trackPageView();
+piwikTracker.enableLinkTracking();
+} catch( err ) {}
+</script><noscript><p><img src="http://piwik.10tok.net/piwik.php?idsite=1" style="border:0" alt="" /></p></noscript>
+<!-- End Piwik Tracking Code -->
+</body>
+</html>

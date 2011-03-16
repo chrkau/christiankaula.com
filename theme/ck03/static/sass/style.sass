@@ -1,0 +1,298 @@
+@import "compass/css3/border-radius"
+@import "compass/css3/transition"
+@import "compass/reset"
+@import "compass/utilities/general/clearfix"
+
+@import "pygments.sass"
+
+
+$width: 900px
+$width-code: 650px
+$width-content: 500px
+$width-sidebar: 275px
+$padding: 10px
+
+$font-size-s: 15px
+$font-size-xs: $font-size-s - 2px
+$font-size-h1: 30px
+$font-size-h2: 25px
+$font-size-h3: 20px
+
+$color: #333
+$color-light: #666
+$color-light-x: #999
+$color-white: #fff
+$color-a: #008AA5
+$color-a-light: #0cd7ff
+$color-a-hover: #008AA5
+$color-a-hover: #EBFAFF
+$color-a-visited: #84a0a5
+$color-h: #B21255
+
+$color-border: #ccc
+$color-meta: $color-light-x
+$color-code-bg: #F5F5F5
+
+
+
+body
+	width: $width
+	font: 17px/24px sans-serif
+	color: $color
+	margin: 0 auto
+
+
+
+a
+	text-decoration: none
+	color: $color-a
+
+	&:hover
+		background: $color-a-hover
+
+	&:visited
+		color: $color-a-visited
+
+
+blockquote
+	color: $color-light
+	padding-left: 10px
+	border-left: 2px solid $color-border
+
+
+footer
+	font-size: $font-size-s
+	color: $color-light-x
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6
+	font: bold 20px Arvo, sans-serif
+	margin-bottom: 10px
+
+
+h1
+	font-size: $font-size-h1
+
+
+h2
+	font-size: $font-size-h2
+
+
+h3
+	font-size: $font-size-h3
+
+
+p
+	margin-bottom: 20px
+
+
+pre
+	overflow: auto
+
+
+strong
+	font-weight: bold
+
+
+
+.codehilite
+	+transition(width, 0.3s, ease-in, 0.5s)
+	width: 485px
+	position: relative
+	left: -15px
+	background: #000
+	font-family: Inconsolata, monospace
+	color: #fff
+	padding: 10px
+	border-left: 5px solid $color-light
+	margin-bottom: 20px
+
+	&:hover
+		+transition-delay(0)
+		width: $width-code
+
+
+.page,
+.post
+	padding: 0 5px
+	border-bottom: 5px solid $color-border
+
+.page
+	.page-title
+		padding-left: 0
+		padding-right: 0
+
+
+.page-title
+	font-size: 30px
+	padding: 0 5px
+	//border-bottom: 1px solid $color-border
+	margin-bottom: 30px
+
+
+.post
+	footer
+		font-style: italic
+		color: $color-light
+
+	header
+		margin-bottom: 15px
+
+
+	time
+		margin: 5px 0
+
+
+.post-content
+	li
+		margin-left: 2em
+	
+	ol,
+	ul
+		margin-bottom: 20px
+	
+	ol
+		list-style-type: decimal
+		
+	ul
+		list-style: disc
+
+
+.post-meta
+	font-size: $font-size-s
+	color: $color-light-x
+
+
+.post-tags
+	a
+		color: $color-a
+
+	li
+		display: inline-block
+		margin-left: 0
+
+	ul
+		display: inline-block
+		list-style: none
+
+
+.post-title
+	font-size: 30px
+	margin-bottom: 5px
+
+	a
+		border-bottom: 1px solid $color-border
+
+
+.vcard
+	.country-name,
+	.postal-code,
+	.street-address,
+	.tel
+		&:before
+			content: "‧ "
+
+
+
+#banner
+	color: $color-white
+
+	
+	h1,
+	h2
+		margin-bottom: 0
+
+	hgroup
+		width: $width-content - $padding * 2
+		background: $color
+		font-weight: bold
+		padding: $padding
+
+		a
+			color: $color-a-light
+
+			&:hover
+				background: none
+
+#categories
+	width: $width-content
+	margin-bottom: 40px
+
+	> li
+		display: inline-block
+		margin-top: 5px
+
+		a
+			display: inline-block
+			background: $color
+			color: $color-a-light
+			padding: 2px 8px
+
+			&:hover
+				background: $color-a
+				color: $color-white
+
+		&.active
+			a
+				background: $color-a
+				color: $color-white
+
+
+#content
+	&.post
+		a
+			&:visited
+				color: $color-a
+
+
+#content-wrapper
+	+pie-clearfix
+	width: $width-content
+	float: left
+	margin-bottom: 20px
+
+
+#footer
+	width: 500px
+	float: left
+	font-size: $font-size-xs
+	line-height: 18px
+	padding-bottom: 20px
+
+
+//#main
+	//+clearfix
+
+
+#post-list
+
+	article
+		border-bottom-width: 2px
+
+	> li
+		margin-bottom: 20px
+
+		&:last-child
+			margin-bottom: 0
+
+			.post
+				border-bottom-width: 5px
+
+	.post-title
+		font-size: 20px
+
+
+#sidebar
+	width: $width-sidebar
+	float: right
+	color: $color-light
+
+	h2,
+	h3
+		margin-bottom: 10px
+

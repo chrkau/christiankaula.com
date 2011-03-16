@@ -2,4 +2,4 @@
 SITENAME = 'Christian Kaula'
 SITESUBTITLE = 'All Things Web'
 SITEURL = 'http://christiankaula.com'
-THEME = '/Users/skh/Sites/christiankaula.com/theme/simple/'
+THEME = 'theme/ck03'

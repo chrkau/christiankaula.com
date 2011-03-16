@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+
+{% block content %}	
+	<section id="content" class="post">
+		<header>
+			<h2 class="post-title"><a href="{{ article.url }}" rel="bookmark" title="Permalink to {{ article.title}}">{{ article.title }}</a></h2>
+			<div class="post-meta">
+				<time datetime="{{ article.date.isoformat() }}">{{ article.locale_date }}</time>
+				{% if article.tags %}
+				<div class="post-tags">
+					Tags:
+					<ul>
+					{% for tag in article.tags %}
+						<li><a href="/tag/{{ tag }}.html">{{ tag }}</a></li>
+					{% endfor %}
+					</ul>
+				</div>
+				{% endif %}
+			</div>
+		</header>
+		<div class="post-content">
+			{{ article.content }}
+		</div>
+		<footer>
+			<p>
+				Want to <a href="mailto:chr.kaula@gmail.com">talk</a> about it?
+			</p>
+		</footer>
+	</section>
+{% endblock %}

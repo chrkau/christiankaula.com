@@ -1,6 +1,7 @@
 title: My take on indention
 date: 2011-02-28 16:53
 slug: my-take-indention
+tags: indention, python, editors
 
 Many battles have been fought about how to indent. And finally it's my time to beat you around the head with my opinion. Here we go.
 

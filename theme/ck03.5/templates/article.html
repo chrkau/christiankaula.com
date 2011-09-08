@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+
+{% block content %}
+	<article class="article-detail">
+		<header>
+			<h1><a href="{{ article.url }}">{{ article.title }}</a></h1>
+			<div class="meta">
+				{{ article.locale_date }}
+				· <a href="/category/{{ article.category }}.html">{{ article.category }}</a>
+			{% if article.tags %}
+				· Tags:
+				<ul class="tags">
+				{% for tag in article.tags %}
+					<li><a href="/tag/{{ tag }}.html">{{ tag }}</a></li>
+				{% endfor %}
+				</ul>
+			{% endif %}
+			</div>
+		</header>
+		{% if article.image and article.refurl %}
+		<a href="/{{ article.refurl }}" class="image-link"><img src="/static/images/{{ article.image }}" alt="Image of {{ article.refurl }}" /></a>
+		{% elif article.image %}
+		<a href="/{{ article.url }}" class="image-link"><img src="/static/images/{{ article.image }}" alt="Image of {{ article.title }}" /></a>
+		{% endif %}
+		{{ article.content }}
+	</article>
+	<p class="addendum">
+		Want to <a href="mailto:chr.kaula@gmail.com">talk about it</a>?
+	</p>
+{% endblock %}
+

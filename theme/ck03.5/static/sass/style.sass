@@ -1,0 +1,276 @@
+@import 960/grid
+@import compass/css3/columns
+@import compass/utilities/general/clearfix
+@import normalize
+@import pygments
+
+
+// grid
+
+$column-width: 230px
+$ninesixty-columns: 3
+$ninesixty-gutter-width: 40px
+$columns-width: $column-width * $ninesixty-columns
+$gutters-width: (($ninesixty-columns - 1) * $ninesixty-gutter-width)
+$ninesixty-grid-width: $columns-width + $gutters-width + $ninesixty-gutter-width
+
++grid-system-complete()
+
+
+// font
+
+$font-size: 17px
+$font-size-s: $font-size - 2px
+$font-size-xs: $font-size-s - 2px
+$font-size-h: 30px
+$font-size-h-s: 25px
+$font-size-h-xs: 20px
+
+// colors
+
+$color: #333
+$color-light: #666
+$color-light-x: #999
+$color-light-xx: #CCC
+
+$color-white: #FFF
+$color-one: #0CD7FF
+$color-one-alt: #008AA5
+$color-two: #F45653
+$color-two-alt: #F47370
+$color-two-alt: #f48f8e
+
+$color-a: #008AA5
+// $color-a: $color-one
+$color-a-light: #0CD7FF
+// $color-a-light: $color-one-alt
+// $color-a-hover: #008AA5
+$color-a-hover: #EBFAFF
+// $color-a-hover: $color-one-alt
+$color-a-visited: #84A0A5
+// $color-a-visited: desaturate(mix($color, $color-one, 25%), 50%)
+// $color-a-visited: red
+// $color-a-visited: $color-two-alt
+
+
+// global
+
+body
+	font-size: $font-size
+	color: $color
+	line-height: 140%
+
+
+// tags
+
+a
+	text-decoration: none
+	color: $color-a
+
+	&:hover
+		background: $color-a-hover
+
+	&:visited
+		color: $color-a-visited
+
+	&:link
+		color: $color-a
+
+address
+	font-style: normal
+
+article
+	img
+		// width: $column-width * 2 + $ninesixty-gutter-width - 2px
+		width: $column-width * 2 + $ninesixty-gutter-width
+	ul
+		list-style: disc
+
+blockquote
+	font-style: italic
+
+h1,
+h2,
+h3
+	font-family: arvo
+	font-weight: bold
+	line-height: 130%
+
+	a
+		border-bottom: 1px solid $color-light-xx
+
+h1
+	+ .meta
+		margin-top: -20px
+
+h2
+	+ .meta
+		margin-top: -10px
+
+h1
+	font-size: 35px
+
+	+ h2
+		margin-top: -20px
+
+// img
+// 	border: 1px solid $color
+
+section,
+#header
+	+pie-clearfix
+	margin-bottom: 20px
+
+
+// classes
+
+.addendum
+	font-style: italic
+
+.adr
+	clear: both
+
+.article-detail
+	h1
+		+ .meta
+			margin-top: -30px
+
+.article-image
+	margin-top: 1em
+
+.codehilite
+	background: $color
+	font-size: $font-size-s
+	color: $color-white
+	padding: 5px 8px
+	margin-bottom: 1em
+
+	pre
+		margin: 0
+
+.darkbg
+	a
+		color: $color-one
+
+		&:hover
+			// background: #3c1515
+			background: $color-a-hover
+
+		&:visited
+			color: lighten(desaturate($color-one, 50%), 50%)
+			color: desaturate(mix($color-one, $color-white, 25%), 20%)
+
+.image-link
+	&:hover
+		background: none
+
+	img
+		@extend .article-image
+		// border-color: $color-a
+
+		// &:hover
+		// 	border: 1px solid $color-one
+
+.inline-list
+	display: inline
+	margin: 0
+
+	li
+		display: inline
+
+.inline-list,
+.plain-list
+	list-style: none
+	padding: 0
+	margin-left: 0
+
+.meta
+	font-size: $font-size-s
+	color: $color-light
+
+	.meta
+		font-size: $font-size-xs
+		color: $color-light-x
+
+.note
+	font-family: arvo
+	font-weight: bold
+	font-size: 30px
+	line-height: 120%
+	margin: 0
+
+.paginator
+	@extend .plain-list
+
+	li
+		display: inline
+
+		&:first-child
+			&:before
+				content: ""
+
+		&:before
+			content: "· "
+
+.photo
+	float: left
+	margin: 4px 20px 20px 0
+	border: 1px solid $color-white
+
+.tags
+	@extend .inline-list
+
+	li
+		&:after
+			content: ","
+
+		&:last-child
+			&:after
+				content: ""
+
+
+// ids
+
+#aboutme
+	background: $color
+	color: $color-white
+	padding: 30px 0
+	margin: 60px 0 40px
+
+#archive-list
+	+column-count(2)
+	+column-gap(40px)
+
+	h2
+		font-size: 20px
+
+	> li
+		break-inside: avoid
+
+#article-list
+	h1
+		font-size: 25px
+
+	> li
+		margin-bottom: 40px
+
+#section-list
+	li
+		&:before
+			content: "· "
+			color: $color-light
+
+		&:first-child
+			&:before
+				content: ""
+
+#sidebar
+	margin-top: 20px
+
+#site-link
+	color: $color-a
+
+#tweet-list
+	p
+		margin-bottom: 0
+

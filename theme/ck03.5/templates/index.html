@@ -1,0 +1,57 @@
+{% extends "base.html" %}
+
+{% block content %}
+	{% block heading %}
+	<h1>All the Stuff</h1>
+	{% endblock %}
+	<ol id="article-list" class="plain-list">
+	{% for article in articles_page.object_list %}
+		<li>
+			<article>
+				<header>
+					<h1><a href="/{{ article.url }}">{{ article.title }}</a></h1>
+					<div class="meta">
+						{{ article.locale_date }}
+					{% if article.tags %}
+						· Tags:
+						<ul class="tags">
+						{% for tag in article.tags %}
+							<li><a href="/tag/{{ tag }}.html">{{ tag }}</a></li>
+						{% endfor %}
+						</ul>
+					{% endif %}
+					</div>
+				</header>
+				{% if article.image and article.refurl %}
+				<a href="/{{ article.refurl }}" class="image-link"><img src="/static/images/{{ article.image }}" alt="Image of {{ article.refurl }}" /></a>
+				{% elif article.image %}
+				<a href="/{{ article.url }}" class="image-link"><img src="/static/images/{{ article.image }}" alt="Image of {{ article.title }}" /></a>
+				{% endif %}
+				{{ article.summary }}
+			{% if article.content > article.summary %}
+				<p class="addendum">
+					<a href="/{{ article.url }}" class="meta">Read Full Post</a>
+				</p>
+			{% endif %}
+			</article>
+		</li>
+	{% endfor %}
+	</ol>
+	{% if articles_paginator.num_pages > 1 %}
+	<nav>
+		<ul class="paginator">
+		{% for nr in articles_paginator.page_range %}
+		{% if articles_page.number == nr %}
+			<li>{{ nr }}</li>
+		{% else %}
+			{% if nr == 1 %}
+			<li><a href="/{{ page_name }}.html">{{ nr }}</a></li>
+			{% else %}
+			<li><a href="/{{ page_name }}{{ nr }}.html">{{ nr }}</a></li>
+			{% endif %}
+		{% endif %}
+		{% endfor %}
+		</ul>
+	</nav>
+	{% endif %}
+{% endblock %}

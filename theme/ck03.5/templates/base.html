@@ -112,16 +112,10 @@
 		var eles = [], i, tweet;
 		$.domReady(function(){
 			$.ajax('/tweets.json', function(resp) {
-				console.log('bla');
-				console.log('1', resp);
-				console.log('2', resp.tweets)
-				console.log('x', resp.tweets.length)
 				for (i = 0; i < resp.tweets.length; i++) {
 					tweet = resp.tweets[i];
-					console.log('3', tweet);
 					eles.push('<li><article><p>' + tweet.text + '</p><time class="meta">' + tweet.date + '</time></article></li>');
 				}
-				console.log(eles.join());
 				$('#tweet-list').html(eles.join(''));
 			});
 		});

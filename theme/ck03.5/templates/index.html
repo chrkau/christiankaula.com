@@ -23,9 +23,9 @@
 					</div>
 				</header>
 				{% if article.image and article.refurl %}
-				<a href="/{{ article.refurl }}" class="image-link"><img src="/static/images/{{ article.image }}" alt="Image of {{ article.refurl }}" /></a>
+				<a href="{{ article.refurl }}" class="image-link"><img src="/static/images/{{ article.image }}" alt="Image of {{ article.refurl }}" /></a>
 				{% elif article.image %}
-				<a href="/{{ article.url }}" class="image-link"><img src="/static/images/{{ article.image }}" alt="Image of {{ article.title }}" /></a>
+				<a href="{{ article.url }}" class="image-link"><img src="/static/images/{{ article.image }}" alt="Image of {{ article.title }}" /></a>
 				{% endif %}
 				{{ article.summary }}
 			{% if article.content > article.summary %}

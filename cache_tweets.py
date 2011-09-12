@@ -11,7 +11,7 @@ from time import mktime
 from urllib import urlencode, urlopen
 
 
-logging.basicConfig(level=logging.DEBUG)
+#logging.basicConfig(level=logging.DEBUG)
 
 
 ### fetching
@@ -45,7 +45,7 @@ for tweet in data[:4]:
 			url['url'], url_long))
 		text = text.replace(
 			url['url'],
-			u'[%s](%s)' % (url['url'], url_long)
+			u'<a href="%s">%s</a>' % (url_long, url['url'])
 		)
 
 	tweets.append({

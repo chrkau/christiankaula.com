@@ -22,7 +22,7 @@ Anyway, if you never asked yourself that question, changes are this hasn't occur
 
 ## But that's the Django way!
 
-No, sorry to disappoint you. And no that does not help with a structured project layout. Remember that it's good style to design Django apps as reusable? You probably do and you are probably thinking: /"Haha! Right! Now what do you say to that?!"* I answer: My point exactly.
+No, sorry to disappoint you. And no that does not help with a structured project layout. Remember that it's good style to design Django apps as reusable? You probably do and you are probably thinking: *"Haha! Right! Now what do you say to that?!"* I answer: My point exactly.
 
 Let's assume you strife to design your apps in a reusable manner. Good for you. Now think of how often you have multiple projects with equaling HTML layouts. My guess is you don't have those very often. So that means the templates that came with your neat reusable app have to be customized to the project. And suddenly your app isn't that reusable anymore just because you bundled templates with it.
 
@@ -30,7 +30,7 @@ Let's assume you strife to design your apps in a reusable manner. Good for you. 
 
 ## But my web designer…
 
-Apart from that you aren't doing your designer a favor either. If you put your templates inside of your app structure the poor guy/girl will have to dig through all those funny *.py* and *.pyc* files. I hear those contain some of the strange stuff those weird corder guys mess around.
+Apart from that you aren't doing your designer a favor either. If you put your templates inside of your app structure the poor guy/girl will have to dig through all those funny *.py* and *.pyc* files. I hear those contain some of the strange stuff those weird corder guys mess around with.
 
 Now if you put all your templates in one directory — possibly even outside of your Django project structure — there will be minimum contact of Python code and HTML. That's a nice thing to do for your layout guy/girl. Just point them at the directory and all they will ever see is homely *.html*. Once you see the happy smile on their face you will know it was the right thing to do.
 

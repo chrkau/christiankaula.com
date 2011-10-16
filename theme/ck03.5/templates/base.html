@@ -5,12 +5,13 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 	<meta name="viewport" content="width=device-width,initial-scale=1" />
 	<meta name="description" content="Chris' thoughts on how to make things simpler. Software, Code and other stuff." />
+	<meta name="keywords" content="{% block keywords %}usability, interface design, programming, web design, web development{% endblock %}" />
 	<meta name="author" content="Christian Kaula" />
 	<link rel="stylesheet" href="/theme/css/style.css" />
 	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Arvo:700" />
 	<link href="/feeds/all.atom.xml" rel="alternate" title="All the stuff" type="application/atom+xml" />
 	<script type="text/javascript" src="/theme/js/ender.min.js" charset="utf-8"></script>
-	<title>christiankaula.com</title>
+	<title>{% block title  %}Christian Kaula. I make stuff simple.{% endblock %}</title>
 </head>
 <body>
 	<header id="header">

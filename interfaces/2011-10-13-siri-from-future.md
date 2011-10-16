@@ -43,3 +43,5 @@ Remember when James T. Kirk and later Jean-Luc Picard said things like *"Compute
 This Siri stuff was Science-Fiction a few years ago. Technology that was so far out that it belonged in the year 2200. You may have to consult your calendar on this, but this kind of technology is early by about 200 years. And if you still don’t see it: This stuff is dang pretty amazing. First it was the Wii, then it was the Xbox Kinect and now this. Imagine what the people that came up with that stuff can do if we give them a few years to combine those things and work out the kinks.
 
 Oh, and if you think this is all delusional crazy talk, no problem at all. Just tell your phone to send me a note to let me know.
+
+Discussion at [Hacker News](http://news.ycombinator.com/item?id=3118293)

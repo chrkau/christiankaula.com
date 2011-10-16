@@ -1,6 +1,7 @@
 title: How to make a better analog watch
 slug: how-make-better-analog-watch
 date: 2011-10-08 08:11
+tags: interface
 
 
 Have you ever thought about the difference of digital watches versus analog ones? I'll tell you: Digital ones are better at their job and here's why.
@@ -57,3 +58,12 @@ The simplest solution is often the best one: Don't move the hands but move the n
 ## Conclusion
 
 Now we have a watch that combines inner workings that are still simple enough to get with the effectiveness of 24h digital watches. And that's my idea of a better analog wrist watch. If you happen to know where I can get something like that (for less than an arm and a leg) let me know.
+
+Discussion at [Hacker News](http://news.ycombinator.com/item?id=3108242).
+
+
+## Updates
+
+**2011-10-16**: Seems the [Fortis B-47 Big Black](http://www.zeiteisen.at/files/6abf15d02b29b0c3b8c264ba698327cd-1185.html) is a pretty good example of what I tried to describe. Don’t look at the hands but look at the way the day and date are displayed. Now imagine you do would put both windows for day and date on the same side and make them show not day and date but hour and minute.
+
+That way you would take away your eyes need to search for the hands because the hour and minute could always be found in the exact same place. Like with digital watches. And there you go.

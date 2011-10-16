@@ -1,7 +1,7 @@
 title: How to make a better analog watch
 slug: how-make-better-analog-watch
 date: 2011-10-08 08:11
-tags: interface
+tags: device
 
 
 Have you ever thought about the difference of digital watches versus analog ones? I'll tell you: Digital ones are better at their job and here's why.

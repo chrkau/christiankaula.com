@@ -1,10 +1,10 @@
 title: Siri is from the future
 slug: siri-from-future
 date: 2011-10-13 19:40
-tags: apple, interface
+tags: apple
 
 
-So you probably heard about the new iPhone by now. And perhaps you are one of the many people that said something along the lines *"Meh, so it's just the iPhone 4 with upgraded hardware and that gimmicky feature where you can talk to your iPhone."* You probably are failing to see the point because it’s so big you’re standing on it.
+So you probably heard about the new iPhone by now. And perhaps you are one of the many people that said something along the lines *"Meh, so it's just the iPhone 4 with upgraded hardware and that gimmicky feature which allows you to talk to your phone.”* You probably are failing to see the point because it’s too big.
 
 
 ## Finally: the first PDA
@@ -14,6 +14,8 @@ Remember those PDA days? Do you also remember what PDA stands for? It stands for
 Quick, give me a job description for a regular, non-digital personal assistant! You say a personal assistant is somebody that does stuff for you? Stuff you don’t care for doing but has to be dealt with? Somebody that does stuff for you? Somebody you can tell to do stuff for you?
 
 I hope by now you can see where I’m going with this. The PDA was supposed to be you digital assistant that takes care of stuff for you. Which never really was the case. PDAs where more of a gimmicky calendar. They never really *did* stuff for you. But you can tell the new iPhone to send an SMS to your wife to let her know you'll be running late.
+
+Sure this isn’t really *super* exciting. Yet. This assitant’s abilities are still quite limited and still Apple put it out there. You know what that means right? Other people will copy, steal, improve.
 
 
 ## Enabling the disabled

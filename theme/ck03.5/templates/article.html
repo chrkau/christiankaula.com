@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 
-{% block title %}{{ article.title }} — {{ block.super }}{% endblock %}
-{% block keywords %}{% for tag in article.tags %}{{ tag }}, {% endfor %}{{ block.super }}{% endblock %}
+{% block title %}{{ article.title }} — {{ super() }}{% endblock %}
+{% block keywords %}{% for tag in article.tags %}{{ tag }}, {% endfor %}{{ super() }}{% endblock %}
 
 {% block content %}
 	<article class="article-detail">

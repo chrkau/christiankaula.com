@@ -1,6 +1,7 @@
 title: Siri is from the future
 slug: siri-from-future
 date: 2011-10-13 19:40
+tags: apple, interface
 
 
 So you probably heard about the new iPhone by now. And perhaps you are one of the many people that said something along the lines *"Meh, so it's just the iPhone 4 with upgraded hardware and that gimmicky feature where you can talk to your iPhone."* You probably are failing to see the point because it’s so big you’re standing on it.
@@ -28,9 +29,9 @@ What most people can do however is communicate. Most of us by talking and most o
 
 Siri might be quite nice on a smartphone but imagine what this stuff could do on a real computer. And I don’t even talk about your run-of-the-mill home PC. I’m talking about one of those supercomputer cloud things. Your data lives on the cloud already doesn’t it? Why not let it be joined by your new digital personal assistant?
 
-There’s your new interface agnostic way to easily access all your data. Why search through the hundreds of music files for something that suits the mood if you can let your computer do that for you? Why deal with getting an appointment with the vet if you can let your PDA handle that?
+There’s your new device agnostic way to easily access all your data. Why search through the hundreds of music files for something that suits the mood if you can let your computer do that for you? Why deal with getting an appointment with the vet if you can let your PDA handle that?
 
-And as I said its interface agnostic. All you really need is a way to transfer voice. So a humble phone line will suffice. Imagine the things that would be possible. A decent AI thing with access to all your personal data. An amazing thought — and a scary one, too.
+And as I said it’s device agnostic. All you really need is a way to transfer voice. So a humble phone line will suffice. Imagine the things that would be possible. A decent AI thing with access to all your personal data. An amazing thought — and a scary one, too.
 
 
 ## This is right from Star Trek

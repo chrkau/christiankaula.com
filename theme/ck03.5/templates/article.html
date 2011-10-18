@@ -1,6 +1,7 @@
 {% extends "base.html" %}
 
 {% block title %}{{ article.title }} — {{ super() }}{% endblock %}
+{% block description %}{% if article.description %}{{ article.description }}{% else %}{{ super() }}{% endif %}{% endblock %}
 {% block keywords %}{% for tag in article.tags %}{{ tag }}, {% endfor %}{{ super() }}{% endblock %}
 
 {% block content %}

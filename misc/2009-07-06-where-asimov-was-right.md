@@ -1,4 +1,4 @@
-title: Where Asimov was right
+title: Where Asimov was Right
 slug: where-asimov-was-right
 date: 2009-07-06 10:42
 tags: internet

@@ -1,4 +1,4 @@
-title: Macs are like Tools
+title: MacS are Like Tools
 slug: macs-are-tools
 date: 2009-06-11 08:47
 tags: mac

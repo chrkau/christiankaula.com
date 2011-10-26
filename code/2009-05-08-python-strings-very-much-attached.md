@@ -1,4 +1,4 @@
-title: Python - Strings very much attached
+title: Python - Strings Very Much Attached
 slug: python-strings-very-much-attached
 date: 2009-05-08 21:04
 tags: python

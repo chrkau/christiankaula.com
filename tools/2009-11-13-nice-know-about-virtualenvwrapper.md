@@ -1,4 +1,4 @@
-title: Nice to Know About virtualenvwrapper
+title: Nice to Know About Virtualenvwrapper
 slug: nice-know-about-virtualenvwrapper
 date: 2009-11-13 12:32
 tags: django, python, virtualenv, virtualenvwrapper

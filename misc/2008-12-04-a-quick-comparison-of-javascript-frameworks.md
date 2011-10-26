@@ -1,4 +1,4 @@
-title: A quick Comparison of JavaScript Frameworks
+title: A Quick Comparison of JavaScript Frameworks
 slug: a-quick-comparison-of-javascript-frameworks
 date: 2008-12-04 00:01
 tags: javascript, jquery, mootools, mochikit, dojo

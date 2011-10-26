@@ -1,4 +1,4 @@
-title: Whoosh makes the Haystack
+title: Whoosh Makes the Haystack
 slug: whoosh-makes-haystack
 date: 2009-07-20 13:33
 tags: django, whoosh, haystack

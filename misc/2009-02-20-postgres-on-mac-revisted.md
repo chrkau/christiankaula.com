@@ -1,4 +1,4 @@
-title: Postgres on Mac revisted
+title: Postgres on Mac Revisted
 slug: postgres-on-mac-revisted
 date: 2009-02-20 21:33
 tags: postgres, mac, macports

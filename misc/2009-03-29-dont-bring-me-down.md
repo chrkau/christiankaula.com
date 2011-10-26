@@ -1,4 +1,4 @@
-title: Don't Bring Me Down...
+title: Don't Bring Me Down…
 slug: dont-bring-me-down
 date: 2009-03-29 03:23
 tags: internetexplorer

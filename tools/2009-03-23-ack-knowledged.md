@@ -1,4 +1,4 @@
-title: ack, knowledged
+title: Ack, Knowledged
 slug: ack-knowledged
 date: 2009-03-23 23:11
 tags: textmate

@@ -1,4 +1,4 @@
-title: Piwik even sounds cooler than Google Analytics
+title: Piwik Even Sounds Cooler Than Google Analytics
 slug: piwik-even-sounds-cooler-google-analytics
 date: 2009-04-16 13:20
 tags: piwik, googleanalytics, seo

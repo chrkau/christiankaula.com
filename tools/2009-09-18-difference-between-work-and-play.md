@@ -1,4 +1,4 @@
-title: The Difference Between Work And Play
+title: The Difference Between Work and Play
 slug: difference-between-work-and-play
 date: 2009-09-18 08:19
 tags: work

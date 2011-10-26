@@ -1,4 +1,4 @@
-title: News from the South
+title: News From the South
 slug: news-south
 date: 2009-04-21 15:49
 tags: south

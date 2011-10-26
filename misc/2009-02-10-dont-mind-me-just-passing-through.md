@@ -1,4 +1,4 @@
-title: Don't mind me - just passing through
+title: Don't Mind Me - Just Passing Through
 slug: dont-mind-me-just-passing-through
 date: 2009-02-10 23:01
 tags: update

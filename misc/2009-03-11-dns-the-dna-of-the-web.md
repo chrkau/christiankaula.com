@@ -1,4 +1,4 @@
-title: DNS - The DNA of the Web
+title: DNS - the DNA of the Web
 slug: dns-the-dna-of-the-web
 date: 2009-03-11 00:12
 tags: dns

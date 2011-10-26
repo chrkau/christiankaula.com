@@ -1,4 +1,4 @@
-title: Django can be too convenient
+title: Django Can be Too Convenient
 slug: django-can-be-too-convenient
 date: 2009-04-29 12:08
 tags: django, python, codeconventions, security

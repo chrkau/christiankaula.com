@@ -1,4 +1,4 @@
-title: Jabber with me over XMPP
+title: Jabber With Me Over XMPP
 slug: jabber-me-over-xmpp
 date: 2009-06-10 08:33
 tags: jabber, xmpp

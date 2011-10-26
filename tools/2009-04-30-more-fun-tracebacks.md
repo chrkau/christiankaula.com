@@ -1,4 +1,4 @@
-title: More Fun with Tracebacks
+title: More Fun With Tracebacks
 slug: more-fun-tracebacks
 date: 2009-04-30 15:59
 tags: python

@@ -1,4 +1,4 @@
-title: Lackeying some Trading Card Fun?
+title: Lackeying Some Trading Card Fun?
 slug: lackeying-some-trading-card-fun
 date: 2009-06-16 14:12
 tags: magic, tcg

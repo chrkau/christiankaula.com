@@ -1,4 +1,4 @@
-title: Bash and the Secret of the lost Folders
+title: Bash and the Secret of the Lost Folders
 slug: bash-and-secret-lost-folders
 date: 2009-05-13 09:17
 tags: bash

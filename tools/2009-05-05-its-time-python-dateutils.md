@@ -1,4 +1,4 @@
-title: It's time for Python dateutils
+title: It's Time for Python Dateutils
 slug: its-time-python-dateutils
 date: 2009-05-05 23:11
 tags: python

@@ -1,4 +1,4 @@
-title: jQuery that Python
+title: jQuery That Python
 slug: jquery-python
 date: 2009-04-30 14:33
 tags: python, beautifulsoup, jquery

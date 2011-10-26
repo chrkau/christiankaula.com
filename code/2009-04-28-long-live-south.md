@@ -1,4 +1,4 @@
-title: Long live the South
+title: Long Live the South
 slug: long-live-south
 date: 2009-04-28 10:20
 tags: django, south

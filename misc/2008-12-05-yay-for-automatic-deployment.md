@@ -1,4 +1,4 @@
-title: Yay for automatic Deployment
+title: Yay for Automatic Deployment
 slug: yay-for-automatic-deployment
 date: 2008-12-05 02:45
 tags: django

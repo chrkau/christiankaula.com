@@ -1,4 +1,4 @@
-title: Why I barely ever read Comments
+title: Why I Barely Ever Read Comments
 slug: why-i-barely-ever-read-comments
 date: 2009-06-08 08:37
 tags: mac, windows

@@ -1,4 +1,4 @@
-title: Code-a-Robot
+title: Code-A-Robot
 slug: code-a-robot
 date: 2009-03-11 11:29
 tags: robocode

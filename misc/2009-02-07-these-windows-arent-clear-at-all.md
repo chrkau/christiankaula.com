@@ -1,4 +1,4 @@
-title: These Windows aren't clear at all
+title: These Windows Aren't Clear at All
 slug: these-windows-arent-clear-at-all
 date: 2009-02-07 04:18
 tags: windows

@@ -1,4 +1,4 @@
-title: Take a Note on the Side with Sidenote
+title: Take a Note on the Side With Sidenote
 slug: take-note-side-sidenote
 date: 2009-04-17 15:10
 tags: sidenote

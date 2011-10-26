@@ -1,4 +1,4 @@
-title: The Problem With Django, nginx and FCGI
+title: The Problem With Django, Nginx and FCGI
 slug: problem-django-nginx-fcgi
 date: 2009-08-07 01:49
 tags: django, nginx, fcgi

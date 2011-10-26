@@ -1,4 +1,4 @@
-title: Fun with Python Stracktraces
+title: Fun With Python Stracktraces
 slug: fun-python-stracktraces
 date: 2009-04-23 15:58
 tags: python

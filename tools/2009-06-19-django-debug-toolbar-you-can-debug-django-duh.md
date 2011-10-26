@@ -1,4 +1,4 @@
-title: With Django Debug Toolbar you can debug Django... duh
+title: With Django Debug Toolbar You Can Debug Django… Duh
 slug: django-debug-toolbar-you-can-debug-django-duh
 date: 2009-06-19 09:07
 tags: django, performanceoptimization

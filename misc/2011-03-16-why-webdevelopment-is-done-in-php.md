@@ -1,4 +1,4 @@
-title: Why Web Development is Done in PHP Or Java
+title: Why Web Development is Done in PHP or Java
 slug: why-web-development-done-php-java
 date: 2011-03-16 18:12
 

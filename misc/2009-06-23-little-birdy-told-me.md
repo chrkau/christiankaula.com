@@ -1,4 +1,4 @@
-title: A little Birdy told me...
+title: A Little Birdy Told Me…
 slug: little-birdy-told-me
 date: 2009-06-23 09:05
 tags: twitter

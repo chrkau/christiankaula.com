@@ -1,4 +1,4 @@
-title: Get Windows for free (For Internet Explorer Testing on Mac)
+title: Get Windows for Free (For Internet Explorer Testing on Mac)
 slug: get-windows-free-internet-explorer-testing-mac
 date: 2009-04-27 14:18
 tags: mac, windows, virtualbox, theunarchiver

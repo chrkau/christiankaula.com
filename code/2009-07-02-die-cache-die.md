@@ -1,4 +1,4 @@
-title: Die Cache, die
+title: Die Cache, Die
 slug: die-cache-die
 date: 2009-07-02 08:44
 tags: django

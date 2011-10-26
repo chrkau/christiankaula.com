@@ -1,4 +1,4 @@
-title: MAME on Mac - Already like the Sound
+title: MAME on Mac - Already Like the Sound
 slug: mame-mac-already-sound
 date: 2009-05-12 15:42
 tags: mac, mame, sdl

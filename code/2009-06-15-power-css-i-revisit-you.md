@@ -1,4 +1,4 @@
-title: By the Power of CSS… I revisit you
+title: By the Power of CSS… I Revisit You
 slug: power-css-i-revisit-you
 date: 2009-06-15 09:49
 tags: css, codeconventions

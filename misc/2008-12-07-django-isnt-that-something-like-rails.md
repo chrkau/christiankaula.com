@@ -1,4 +1,4 @@
-title: Django? Isn't that something like Rails?
+title: Django? Isn't That Something Like Rails?
 slug: django-isnt-that-something-like-rails
 date: 2008-12-07 14:59
 tags: django, rails, php

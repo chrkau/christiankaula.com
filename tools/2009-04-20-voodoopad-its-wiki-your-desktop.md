@@ -1,4 +1,4 @@
-title: VoodooPad - Its a Wiki on your Desktop
+title: VoodooPad - Its a Wiki on Your Desktop
 slug: voodoopad-its-wiki-your-desktop
 date: 2009-04-20 19:23
 tags: voodoopad

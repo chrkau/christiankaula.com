@@ -1,4 +1,4 @@
-title: Django Members that are in Fact raw SQL
+title: Django Members That are in Fact Raw SQL
 slug: django-members-are-fact-raw-sql
 date: 2009-06-29 08:32
 tags: django, sql

@@ -1,4 +1,4 @@
-title: You don't print the Web do you?
+title: You Don't Print the Web Do You?
 slug: you-dont-print-the-web-do-you
 date: 2009-02-27 10:56
 tags: webdesign

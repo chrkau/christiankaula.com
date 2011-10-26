@@ -1,4 +1,4 @@
-title: Selenium is pretty neat
+title: Selenium is Pretty Neat
 slug: selenium-pretty-neat
 date: 2009-07-17 10:42
 tags: selenium, testing

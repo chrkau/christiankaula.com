@@ -1,4 +1,4 @@
-title: Having Been at Tschitschereengreen
+title: Having been at Tschitschereengreen
 slug: having-been-tschitschereengreen
 date: 2009-10-13 13:46
 tags: internship, job

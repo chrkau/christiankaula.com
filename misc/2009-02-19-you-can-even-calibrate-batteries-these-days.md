@@ -1,4 +1,4 @@
-title: You can even calibrate Batteries these Days
+title: You Can Even Calibrate Batteries These Days
 slug: you-can-even-calibrate-batteries-these-days
 date: 2009-02-19 17:28
 tags: apple, mac

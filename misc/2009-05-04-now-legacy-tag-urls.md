@@ -1,4 +1,4 @@
-title: Now with legacy Tag-URLs
+title: Now With Legacy Tag-URLs
 slug: now-legacy-tag-urls
 date: 2009-05-04 01:23
 tags: update

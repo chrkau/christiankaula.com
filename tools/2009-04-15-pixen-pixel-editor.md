@@ -1,4 +1,4 @@
-title: Pixen, Pixel... Editor
+title: Pixen, Pixel… Editor
 slug: pixen-pixel-editor
 date: 2009-04-15 23:45
 tags: pixen, photoshop

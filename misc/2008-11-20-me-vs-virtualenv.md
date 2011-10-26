@@ -1,4 +1,4 @@
-title: Me vs virtualenv
+title: Me vs Virtualenv
 slug: me-vs-virtualenv
 date: 2008-11-20 13:16
 tags: update

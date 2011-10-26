@@ -1,4 +1,4 @@
-title: CSS is the new C - Sass is the Future
+title: CSS is the New C - Sass is the Future
 slug: css-new-c-sass-future
 date: 2009-07-08 09:03
 tags: css, 960gs, sass, compass

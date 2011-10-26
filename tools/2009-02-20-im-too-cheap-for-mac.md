@@ -1,4 +1,4 @@
-title: I'm too cheap for .Mac
+title: I'm Too Cheap for .Mac
 slug: im-too-cheap-for-mac
 date: 2009-02-20 21:19
 tags: unison, mac

@@ -1,4 +1,4 @@
-title: Long hard Road out of Hell
+title: Long Hard Road Out of Hell
 slug: long-hard-road-out-of-hell
 date: 2009-04-14 00:29
 tags: update

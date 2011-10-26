@@ -1,4 +1,4 @@
-title: Jabberbot is coming
+title: Jabberbot is Coming
 slug: jabberbot-coming
 date: 2009-06-12 09:36
 tags: jabberbot, jabber, xmpp

@@ -1,4 +1,4 @@
-title: Twitter is even worse than I thought
+title: Twitter is Even Worse Than I Thought
 slug: twitter-even-worse-i-thought
 date: 2009-06-24 08:48
 tags: twitter

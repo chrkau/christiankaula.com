@@ -1,4 +1,4 @@
-title: What to do if you have to 'make all strings editable'
+title: What to Do if You Have to 'Make All Strings Editable'
 slug: what-do-if-you-have-make-all-strings-editable
 date: 2009-06-25 16:02
 tags: django, chunks

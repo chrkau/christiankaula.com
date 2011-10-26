@@ -1,4 +1,4 @@
-title: What if Twitter stopped to be tomorrow?
+title: What if Twitter Stopped to be Tomorrow?
 slug: what-if-twitter-stopped-tomorrow
 date: 2009-07-01 08:55
 tags: twitter, jabber, xmpp

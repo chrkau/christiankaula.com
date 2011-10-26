@@ -1,4 +1,4 @@
-title: Fun with Forms in Django
+title: Fun With Forms in Django
 slug: fun-forms-django
 date: 2009-05-07 16:00
 tags: django, python

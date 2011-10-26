@@ -1,4 +1,4 @@
-title: The Webdesigners arch Fiend: IE6
+title: The Webdesigners Arch Fiend: IE6
 slug: webdesigners-arch-fiend-ie6
 date: 2009-07-03 23:08
 tags: internetexplorer

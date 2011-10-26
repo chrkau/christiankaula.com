@@ -1,4 +1,4 @@
-title: Studi-tools.de Is Online
+title: Studi-tools.de is Online
 slug: studi-toolsde-online
 date: 2009-11-16 22:57
 tags: django, django-compress, south

@@ -1,4 +1,4 @@
-title: So sweet the crons - Sweetcron
+title: So Sweet the Crons - Sweetcron
 slug: so-sweet-crons-sweetcron
 date: 2009-04-22 14:28
 tags: sweetcron

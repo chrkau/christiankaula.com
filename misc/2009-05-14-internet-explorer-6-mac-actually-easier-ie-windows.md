@@ -1,4 +1,4 @@
-title: Internet Explorer 6 on Mac - Actually Easier than IE on Windows
+title: Internet Explorer 6 on Mac - Actually Easier Than IE on Windows
 slug: internet-explorer-6-mac-actually-easier-ie-windows
 date: 2009-05-14 23:20
 tags: mac, internetexplorer, ies4osx

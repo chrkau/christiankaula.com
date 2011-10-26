@@ -1,4 +1,4 @@
-title: That is why Developers aren't called Testers
+title: That is Why Developers Aren't Called Testers
 slug: why-developers-arent-called-testers
 date: 2009-05-04 20:51
 tags: testing, development

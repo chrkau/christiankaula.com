@@ -1,4 +1,4 @@
-title: Multi-Object-Edit with Django FormSets
+title: Multi-Object-Edit With Django FormSets
 slug: multi-object-edit-django-formsets
 date: 2009-07-09 08:39
 tags: django

@@ -3,7 +3,7 @@ slug: improving-copy-entrydns
 date: 2011-10-25 12:15
 tags: copy, entrydns
 
-[![image](http://christiankaula.com/static/images/entrydns-frontpage.png)](http://entrydns.net/pages/home)
+[![image](http://christiankaula.com/static/images/entrydns.net.png)](http://entrydns.net/pages/home)
 
 Above you are looking at the front page of [EntryDNS's homepage](http://entrydns.net/pages/home). Quick, tell me what they are selling. *Some kind of free DNS service?* I couldn’t tell either. Let’s see if we can make their copy simpler, more to-the-point.
 

@@ -1,4 +1,4 @@
-title: How to come up with a good product idea (as a coder)
+title: How to Come Up With a Good Oroduct Idea (as a coder)
 slug: how-come-up-good-product-idea-coder
 date: 2011-10-18 9:50
 description: How to keep your eyes and mind open to new product ideas.

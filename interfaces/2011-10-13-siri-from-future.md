@@ -1,4 +1,4 @@
-title: Siri is from the future
+title: Siri is from the Future
 slug: siri-from-future
 date: 2011-10-13 19:40
 tags: apple

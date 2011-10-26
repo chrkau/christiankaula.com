@@ -1,4 +1,4 @@
-title: My take on indention
+title: My Take on Indention
 date: 2011-03-28 16:53
 slug: my-take-indention
 tags: indention, python, editors

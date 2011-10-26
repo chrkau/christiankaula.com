@@ -1,4 +1,4 @@
-title: On CSS structure
+title: On CSS Structure
 slug: on-css-structure
 date: 2011-06-01 01:54
 tags: css

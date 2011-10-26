@@ -1,4 +1,4 @@
-title: How to make a better analog watch
+title: How to Make a Better Analog Watch
 slug: how-make-better-analog-watch
 date: 2011-10-08 08:11
 tags: device

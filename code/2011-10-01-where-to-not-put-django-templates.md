@@ -1,4 +1,5 @@
 title: Where to Not Put Django Templates
+date: 2011-10-01
 slug: where-to-not-put-django-templates
 tags: django
 

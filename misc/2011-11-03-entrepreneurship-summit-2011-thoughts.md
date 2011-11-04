@@ -1,10 +1,11 @@
 title: Entrepreneurship Summit 2011 Thoughts
 slug: entrepreneurship-summit-2011-thoughts
 date: 2011-11-03 11:07
-tags: entrepreneurship, networking
+description: Some thoughts on the Entrepreneurship Summit 2011
+tags: entrepreneurship, networking, event
 
 
-Sorry for being a bit late with this but after coming back on sunday I seem to have caught a virus (not the digital kind). Anyway, here are some thoughts on the Entrepreneurship Summit 2011.
+Sorry for being a bit late with this but after coming back on sunday I seem to have caught a virus (not the digital kind). Anyway, here are some thoughts on the [Entrepreneurship Summit 2011](http://www.entrepreneurship.de/summit/10-2011/) in Berlin.
 
 
 ## Useless freebies don’t work

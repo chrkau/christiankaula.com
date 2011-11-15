@@ -2,6 +2,7 @@ title: How to Handle Database Views in Django/South
 slug: how-to-handle-database-views-django-south
 date: 2011-11-14 19:43
 tags: database, django, postgres
+description: My simplistic take on database view handling in Django/South.
 
 In a recent Django project I had to work with Postgres views quite extensively. The problem is that while [South](http://south.aeracode.org/) does a great job handling model related stuff, you’re on your own when handling views and other database level stuff. So I thought I’d share the simple/simplistic solution I came up with.
 

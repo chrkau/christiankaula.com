@@ -23,7 +23,11 @@
 			<nav>
 				<ul id="section-list" class="grid_3 inline-list">
 				{% for cat, articles in categories %}
+					{% if category == cat %}
+					<li>{{ cat }}/li> 
+					{% else %}
 					<li><a href="/category/{{ cat }}.html">{{ cat }}</a></li> 
+					{% endif %}
 				{% endfor %}
 				</ul>
 			</nav>
@@ -37,7 +41,7 @@
 			</div>
 			{% block sidebar %}
 			<div id="sidebar" class="grid_1 meta">
-				<h2><a href="#aboutme">About Me</a></h2>
+				<h2><a href="#aboutme">Contact Me</a></h2>
 				<h2><a href="/feeds/all.atom.xml">Atom Feed</a></h2>
 				<h2><a href="http://twitter.com/chrkau">@chrkau</a></h2>
 				<ul id="tweet-list" class="plain-list">

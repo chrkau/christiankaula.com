@@ -24,7 +24,7 @@
 				<ul id="section-list" class="grid_3 inline-list">
 				{% for cat, articles in categories %}
 					{% if category == cat %}
-					<li>{{ cat }}/li> 
+					<li>{{ cat }}</li> 
 					{% else %}
 					<li><a href="/category/{{ cat }}.html">{{ cat }}</a></li> 
 					{% endif %}

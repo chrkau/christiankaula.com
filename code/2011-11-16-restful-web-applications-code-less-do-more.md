@@ -2,7 +2,7 @@ title: RESTful Web Applications: Code Less, Do More
 slug: restful-web-applications-code-less-do-more
 date: 2011-11-16 20:25
 tags: rest, webapps, architecture
-description: "A few thoughts on why a client-side assembled web architecture saves a lot of work.”
+description: A few thoughts on why a client-side assembled web architecture saves a lot of work.
 
 
 What does web development mean? Usually you build some software that gets data out of some database converts it to HTML and sends it to a browser. Usually that software has to handle the other case, too: Receive input from a browser, make sense of it and write the data into the database. There’s your average web project. 

@@ -105,5 +105,5 @@ Of course there is stuff still missing – you won't see errors in your form for
 
 **Edit 31.10.2012:**
 
-Thanks to [Trinh Nguyen](https://twitter.com/dangtrinhnt) for bringing my attention to some stupid errors in the code and the inspiration do do some more commenting.
+Thanks to [Trinh Nguyen](https://twitter.com/dangtrinhnt) for bringing my attention to some stupid errors in the code and the inspiration to do some more commenting.
 

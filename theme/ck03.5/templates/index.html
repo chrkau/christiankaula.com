@@ -11,7 +11,7 @@
 				<header>
 					<h1><a href="/{{ article.url }}">{{ article.title }}</a></h1>
 					<div class="meta">
-						{{ article.locale_date }}
+						<time datetime="{{ article.date|replace(" ", "T") }}">{{ article.locale_date }}</time>
 					{% if article.tags %}
 						· Tags:
 						<ul class="tags">

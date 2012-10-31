@@ -53,6 +53,11 @@ $color-a-visited: #84A0A5
 // $color-a-visited: $color-two-alt
 
 
+@mixin avoidbreakInside
+	+column-break-inside(avoid)
+	display: table
+
+
 // global
 
 body
@@ -89,6 +94,12 @@ article
 
 blockquote
 	font-style: italic
+
+dd
+	margin-bottom: 0.5em
+
+dt
+	font-weight: bold
 
 h1,
 h2,
@@ -140,14 +151,14 @@ section,
 	margin-top: 1em
 
 .codehilite
-	background: $color
+	background: #fdf6e3
 	font-size: $font-size-s
-	color: $color-white
-	padding: 5px 8px
 	margin-bottom: 1em
 
 	pre
-		margin: 0
+		overflow: auto
+		padding: 5px 8px
+		white-space: pre
 
 .darkbg
 	a
@@ -246,11 +257,17 @@ section,
 		font-size: 20px
 
 	> li
-		break-inside: avoid
+		+avoidbreakInside
 
 #article-list
 	h1
 		font-size: 25px
+
+	h2
+		font-size: 20px
+
+	h3
+		font-size: 15px
 
 	> li
 		margin-bottom: 40px

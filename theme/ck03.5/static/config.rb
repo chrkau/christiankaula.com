@@ -1,4 +1,5 @@
 # Require any additional compass plugins here.
+require "compass-normalize"
 require "ninesixty"
 
 # Set this to the root of your project when deployed:

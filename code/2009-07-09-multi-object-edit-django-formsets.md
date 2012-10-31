@@ -24,7 +24,7 @@ So in case anybody else is in the same situation here is some code of how I did 
 		# this is where you can add additional fields to a ModelFormSet
 		# this is also where you can change stuff about the auto generated form
 		def add_fields(self, form, index):
-			super(TracImportTestcaseFormSet, self).add_fields(form, index)
+			super(FooFormSet, self).add_fields(form, index)
 			form.fields['is_checked'] = forms.BooleanField(required=False)
 			form.fields['somefield'].widget.attrs['class'] = 'somefieldclass'
 
@@ -35,6 +35,7 @@ After writing the FormSet itself here is the view:
 	from django.shortcuts import redirect
 	from django.template import RequestContext
 	from fooproject.fooapp.forms import FooFormSet
+	from fooproject.models import Foo
 
 
 	def fooview(request):
@@ -47,16 +48,22 @@ After writing the FormSet itself here is the view:
 			)
 
 			if formset.is_valid():
-				if action == u'save'
-					for form in formset.forms:
-						if form.cleaned_data.get('is_checked'):
-							form.save(commit=False).delete()
-				
-				elif action == u'delete':
-					if formset.is_valid():
-			
+				# iterate over all forms in the formset
+				for form in formset.forms:
+					# only do stuff for forms in which is_checked is checked
+					if form.cleaned_data.get('is_checked'):
+						if action == u'delete':
+							# we need to call save to get an actual model but
+							# there is no need to hit the database hence the
+							# commit=False
+							model_instance = form.save(commit=False)
+							# now that we got a model we can delete it
+							model_instance.delete()
+						if action == u'save':
+							form.save()
+
 				redirect('someview')
-			
+
 		else:
 			formset = FooFormSet(
 				queryset=Foo.objects.all()
@@ -89,15 +96,22 @@ Now all that's missing is the template:
 					<td>{{ form.somefield }}</td>
 					<td>{{ form.someotherfield }}</td>
 				</tr>
-			{% endfor %}		
+			{% endfor %}
 			</tbody>
 		</table>
 		<p>
 			{# and don't forget about the management form #}
 			{{ formset.management_form }}
-			<button type="submit" name="action" value="save">{% chunk "save" %}</button>
-			<button type="submit" name="action" value="delete">{% chunk "delete" %}</button>
+			{% csrf_token %}
+			<button type="submit" name="action" value="save">save</button>
+			<button type="submit" name="action" value="delete">delete</button>
 		</p>
 	</form>
 
-Of course there is stuff still missing - you won't see errors in your form for example. But you get the general idea.
+Of course there is stuff still missing – you won't see errors in your form for example. But you get the general idea.
+
+
+**Edit 31.10.2012:**
+
+Thanks to [Trinh Nguyen](https://twitter.com/dangtrinhnt) for bringing my attention to some stupid errors in the code and the inspiration do do some more commenting.
+

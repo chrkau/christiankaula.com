@@ -7,10 +7,11 @@
 	<link rel="stylesheet" type="text/css" href="/theme/css/style.css" />
 	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Arvo:regular,italic,bold,bolditalic" />
 	<link rel='stylesheet' type='text/css' href='http://fonts.googleapis.com/css?family=Inconsolata' />
+	<link href="/feeds/all.atom.xml" rel="alternate" title="Recent Blog Posts" type="application/atom+xml" />
 </head>
 
 <body id="index" class="home">
-<div id="wrapper">
+<div class="wrapper">
 	<header id="banner" class="body">
 		<hgroup>
 			<h1><a href="{{ SITEURL }}">{{ SITENAME }} <strong></strong></a></h1>
@@ -47,36 +48,57 @@
 			<li><a href="http://djangogigs.com/developers/christian-kaula/">Djangogigs</a></li>
 		</ul>
 	</aside>
-	<footer id="footer">
-		<address id="about" class="vcard">
-			<div class="adr">
-				<span class="fn">Christian Kaula</span>
-				<span class="street-address">Thieraufstrasse 2</span>
-				<span class="postal-code">95028</span>
-				<span class="locality">Hof</span>
-				<span class="country-name">Germany</span>
-			</div>
-			<div>
-				<a href="mailto:chr.kaula@gmail.com" class="email">chr.kaula@gmail.com</a>
-				<span class="tel"><span class="type">Mobile</span> +49 179 9709833</span>
-			</div>
-			<div>
-				<a href="http://christiankaula.com/" class="url">http://christiankaula.com</a>
-			</div>
-		</address>
-	</footer>
 </div>
+<footer id="footer">
+	<section id="aboutme">
+		<div class="wrapper">
+			<address id="about" class="vcard">
+				<div class="adr">
+					<span class="fn">Christian Kaula</span>
+					<span class="street-address">Thieraufstrasse 2</span>
+					<span class="postal-code">95028</span>
+					<span class="locality">Hof</span>
+					<span class="country-name">Germany</span>
+				</div>
+				<div>
+					<a href="mailto:chr.kaula@gmail.com" class="email">chr.kaula@gmail.com</a>
+					<span class="tel"><span class="type">Mobile</span> +49 179 9709833</span>
+				</div>
+				<div>
+					<a href="http://christiankaula.com/" class="url">http://christiankaula.com</a>
+				</div>
+			</address>
+		</div>
+	</section>
+	<section id="archive">
+		<div class="wrapper">
+			<h1>Archive</h1>
+		{% for cat, articles in categories %}
+		{% if cat != "tweets" %}
+			<h2 class="archive-header">{{ cat }}</h2>
+			<ol class="category-archive">
+			{% for article in articles %}
+				<li>
+					<a href="{{ article.url }}">{{ article.title }}</a>
+				</li>
+			{% endfor %}
+			</ol>
+		{% endif %}
+		{% endfor %}
+		</div>
+	</section>
+</footer>
 <!-- Piwik --> 
-<script type="text/javascript">
-var pkBaseURL = (("https:" == document.location.protocol) ? "https://piwik.10tok.net/" : "http://piwik.10tok.net/");
-document.write(unescape("%3Cscript src='" + pkBaseURL + "piwik.js' type='text/javascript'%3E%3C/script%3E"));
-</script><script type="text/javascript">
-try {
-var piwikTracker = Piwik.getTracker(pkBaseURL + "piwik.php", 1);
-piwikTracker.trackPageView();
-piwikTracker.enableLinkTracking();
-} catch( err ) {}
-</script><noscript><p><img src="http://piwik.10tok.net/piwik.php?idsite=1" style="border:0" alt="" /></p></noscript>
+<!--<script type="text/javascript">-->
+<!--var pkBaseURL = (("https:" == document.location.protocol) ? "https://piwik.10tok.net/" : "http://piwik.10tok.net/");-->
+<!--document.write(unescape("%3Cscript src='" + pkBaseURL + "piwik.js' type='text/javascript'%3E%3C/script%3E"));-->
+<!--</script><script type="text/javascript">-->
+<!--try {-->
+<!--var piwikTracker = Piwik.getTracker(pkBaseURL + "piwik.php", 1);-->
+<!--piwikTracker.trackPageView();-->
+<!--piwikTracker.enableLinkTracking();-->
+<!--} catch( err ) {}-->
+<!--</script><noscript><p><img src="http://piwik.10tok.net/piwik.php?idsite=1" style="border:0" alt="" /></p></noscript>-->
 <!-- End Piwik Tracking Code -->
 </body>
 </html>

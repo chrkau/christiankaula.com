@@ -3,7 +3,7 @@
 {% block content %}	
 <section id="content">
 	{% block content_title %}
-	<h2 class="page-title">All articles</h2>
+	<h2 class="page-title">All the Stuff</h2>
 	{% endblock %}
 
 	<ol id="post-list">
@@ -11,20 +11,31 @@
 		<li>
 			<article class="post">
 				<header>
+				{% if article.category == "tweets" %}
+					<blockquote class="tweetquote">
+						{{ article.content }}
+					</blockquote>
+				{% else %}
 					<h3 class="post-title"><a href="/{{ article.url }}" rel="bookmark" title="Permalink to {{ article.title}}">{{ article.title }}</a></h2>
+					{% if article.image %}
+					<a href="{{ article.url }}"><img src="{{ article.image }}" class="preview-img" /></a>
+					{% endif %}
+				{% endif %}
 					<div class="post-meta">
+					{% if article.category != "projects" %}
 						<time datetime="{{ article.date.isoformat() }}">{{ article.locale_date }}</time>
 						in <a href="{{ SITEURL }}/category/{{ article.category }}.html">{{ article.category }}</a>
-						{% if article.tags %}
+					{% endif %}
+					{% if article.tags %}
 						<div class="post-tags">
 							Tags:
 							<ul>
 							{% for tag in article.tags %}
-							<li><a href="/tag/{{ tag }}.html">{{ tag }}</a></li>
+								<li><a href="/tag/{{ tag }}.html">{{ tag }}</a></li>
 							{% endfor %}
 							</ul>
 						</div>
-						{% endif %}
+					{% endif %}
 					</div>
 				</header>
 				{#<div class="post-content">
@@ -34,6 +45,7 @@
 		</li>
 	{% endfor %}
 	</ol>
+	{% include "paginator.html" %}
 	{# <p class="paginator">
 	{% if articles_page.has_previous() %}
 	{% if articles_page.previous_page_number() == 1 %}

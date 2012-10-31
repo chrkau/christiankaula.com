@@ -17,7 +17,7 @@ Looks familiar? Uh oh — seems I got you.
 
 The most obvious giveaway is the double occurrence of your app's name. Ever wondered why you should have to put your templates in a directory named after the app that the current templates directory belongs to? No? Aww, you disappoint me. Aren't we developer types supposed to be lazy and such?
 
-Anyway, if you never asked yourself that question, changes are this hasn't occurred to your either: Why would anyone ever want to put a template for one app in the templates directory of another app. Most likely that is because pretty much nobody ever would want to do that.
+Anyway, if you never asked yourself that question, chances are this hasn't occurred to your either: Why would anyone ever want to put a template for one app in the templates directory of another app. Most likely that is because pretty much nobody ever would want to do that.
 
 
 
@@ -35,7 +35,7 @@ Apart from that you aren't doing your designer a favor either. If you put your t
 
 Now if you put all your templates in one directory — possibly even outside of your Django project structure — there will be minimum contact of Python code and HTML. That's a nice thing to do for your layout guy/girl. Just point them at the directory and all they will ever see is homely *.html*. Once you see the happy smile on their face you will know it was the right thing to do.
 
-Besides that you might remember that us weird coder people also like to fight the constant battle of parting layout from logic. A battle we lose often enough, so why not cease victory where it comes easy?
+Besides that you might remember that us weird coder people also like to fight the constant battle of parting layout from logic. A battle we lose often enough, so why not claim victory where it comes easy?
 
 
 

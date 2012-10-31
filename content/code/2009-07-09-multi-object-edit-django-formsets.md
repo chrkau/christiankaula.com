@@ -14,10 +14,7 @@ So in case anybody else is in the same situation here is some code of how I did 
 
 	# creating a FormSet for a specific Model is easy
 	FooFormSetBase = modelformset_factory(
-		Foo,
-		extra=0,
-		fields=('somefield', 'someotherfield')
-	)
+		Foo, extra=0, fields=('somefield', 'someotherfield'))
 
 	# now we want to add a checkbox so we can do stuff to only selected items
 	class FooFormSet(FooFormSetBase):
@@ -43,9 +40,7 @@ After writing the FormSet itself here is the view:
 			# we have multiple actions - save and delete in this case
 			action = request.POST.get('action')
 			formset = FooFormSet(
-				request.POST,
-				queryset=Foo.objects.all()
-			)
+				request.POST, queryset=Foo.objects.all())
 
 			if formset.is_valid():
 				# iterate over all forms in the formset

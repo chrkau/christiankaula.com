@@ -1,2 +1,4 @@
 output
+pelican.pid
+srv.pid
 tweets.json

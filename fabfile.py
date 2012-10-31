@@ -7,7 +7,7 @@ from fabric.api import cd, prefix, run, task
 def compile():
 	with prefix('source ~/env/bin/activate'):
 		with cd('~/repo'):
-			run('pelican . -s settings.py -o ../htdocs -v')
+			run('pelican . -s pelicanconf.py -o ../htdocs -v')
 
 @task
 def pull():

@@ -60,13 +60,10 @@ After writing the FormSet itself here is the view:
 				redirect('someview')
 
 		else:
-			formset = FooFormSet(
-				queryset=Foo.objects.all()
-			)
+			formset = FooFormSet(queryset=Foo.objects.all())
 
-		return render_to_response('sometemplate.html', {
-			'formset': formset,
-		}, context_instance=RequestContext(request))
+		return render_to_response('sometemplate.html', {'formset': formset},
+			context_instance=RequestContext(request))
 
 Now all that's missing is the template:
 

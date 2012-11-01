@@ -10,25 +10,18 @@
 	<link rel="stylesheet" href="/theme/css/style.css" />
 	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Arvo:700" />
 	<link href="/feeds/all.atom.xml" rel="alternate" title="All the stuff" type="application/atom+xml" />
-	<script type="text/javascript" src="/theme/js/ender.min.js" charset="utf-8"></script>
 	<title>{% block title  %}Christian Kaula. I make stuff simple.{% endblock %}</title>
 </head>
 <body>
 	<header id="header">
-		<div class="container_3">
-			<hgroup class="grid_3">
-				<h1><a href="/" id="site-link">Christian Kaula</a></h1>
+		<div class="container_3"> <hgroup class="grid_3">
+				<h1><a href="/" id="site-link"><span class="kerning-1">C</span><span class="kerning1">h</span>ris<span class="kerning1">t</span>i<span class="kerning-1">a</span>n K<span class="kerning-2">a</span>ula</a></h1>
 				<h2>I make stuff simple.</h2>
 			</hgroup>
 			<nav>
 				<ul id="section-list" class="grid_3 inline-list">
 				{% for cat, articles in categories %}
-					{% if category == cat %}
-					<li>{{ cat }}</li> 
-					{% else %}
-					<li><a href="/category/{{ cat }}.html">{{ cat }}</a></li> 
-					{% endif %}
-				{% endfor %}
+					{% if category == cat %} <li>{{ cat }}</li> {% else %} <li><a href="/category/{{ cat }}.html">{{ cat }}</a></li> {% endif %} {% endfor %}
 				</ul>
 			</nav>
 		</div>
@@ -51,95 +44,9 @@
 			{% endblock %}
 		</div>
 	</section>
-	<section id="aboutme" class="darkbg">
-		<div class="container_3">
-			<address class="grid_2 vcard">
-				<div>
-					<img src="/theme/images/me.jpg" alt="Photo of Christian Kaula" class="photo" />
-					<p class="note">
-						I make stuff simple.<br/>
-						Code, interfaces, things.<br/>
-						You can hire me.
-					</p>
-				</div>
-				<div class="adr">
-					<span class="fn">Christian Kaula</span> ·
-					<span class="street-address">Thieraufstrasse 2</span> ·
-					<span class="postal-code">95028</span>
-					<span class="locality">Hof</span> ·
-					<span class="country-name">Germany</span>
-				</div>
-				<div>
-					<a href="http://twitter.com/chrkau" class="url">Twitter</a> ·
-					<a href="https://www.xing.com/profile/Christian_Kaula" class="url">Xing</a> ·
-					<a href="https://github.com/chrkau" class="url">GitHub</a> ·
-					<a href="https://bitbucket.org/chrkau" class="url">BitBucket</a> ·
-					<a href="http://djangopeople.net/ckau/" class="url">Django People</a> ·
-					<a href="http://djangogigs.com/developers/christian-kaula/" class="url">Djangogigs</a>
-				</div>
-				<div>
-					<a href="mailto:chr.kaula@gmail.com" class="email">chr.kaula@gmail.com</a> ·
-					<span class="tel"><span class="type">Mobile</span> +49 179 9709833</span>
-				</div>
-				<div>
-					<a href="http://christiankaula.com/" class="url">http://christiankaula.com</a>
-				</div>
-				<a href="/" id="logo"><img src="/theme/images/asterisk.png" alt="Logo of christiankaula.com" class="logo" /></a>
-			</address>
-		</div>
-	</section>
-	{% block archive %}
-	<section id="archive">
-		<div class="container_3">
-			<div class="grid_3">
-				{% block archive_heading %}
-				<h1>Archive</h1>
-				{% endblock %}
-				<ol id="archive-list" class="plain-list">
-				{% for article in articles %}
-					<li>
-						<h2><a href="/{{ article.url }}">{{ article.title }}</a></h2>
-						<div class="meta">
-							<a href="/category/{{ article.category }}.html">{{ article.category }}</a> ·
-							Tags:
-							<ul class="tags">
-							{% for tag in article.tags %}
-								<li><a href="/tag/{{ tag }}.html">{{ tag }}</a></li>
-							{% endfor %}
-							</ul>
-						</div>
-					</li>
-				{% endfor %}
-				</ol>
-			</div>
-		</div>
-	</section>
-	{% endblock %}
-	<script type="text/javascript" charset="utf-8">
-		var eles = [], i, tweet;
-		$.domReady(function(){
-			$.ajax('/tweets.json', function(resp) {
-				for (i = 0; i < resp.tweets.length; i++) {
-					tweet = resp.tweets[i];
-					eles.push('<li><article><p>' + tweet.text + '</p><time class="meta">' + tweet.date + '</time></article></li>');
-				}
-				$('#tweet-list').html(eles.join(''));
-			});
-		});
-	</script>
-	<!-- Piwik --> 
-	<script type="text/javascript">
-		var pkBaseURL = (("https:" == document.location.protocol) ? "https://piwik.10tok.net/" : "http://piwik.10tok.net/");
-		document.write(unescape("%3Cscript src='" + pkBaseURL + "piwik.js' type='text/javascript'%3E%3C/script%3E"));
-	</script>
-	<script type="text/javascript">
-		try {
-		var piwikTracker = Piwik.getTracker(pkBaseURL + "piwik.php", 1);
-		piwikTracker.trackPageView();
-		piwikTracker.enableLinkTracking();
-		} catch( err ) {}
-	</script>
-	<noscript><p><img src="http://piwik.10tok.net/piwik.php?idsite=1" style="border:0" alt="" /></p></noscript>
-	 <!-- End Piwik Tracking Code -->
+	{% include '_aboutme.html' %}
+	{% include '_archive.html' %}
+	{% include '_js.html' %}
+	{% include '_piwik.html' %}
 </body>
 </html>

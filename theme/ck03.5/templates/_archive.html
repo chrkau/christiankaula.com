@@ -1,0 +1,27 @@
+{% block archive %}
+<section id="archive">
+	<div class="container_3">
+		<div class="grid_3">
+			{% block archive_heading %}
+			<h1><span class="kerning1">A</span><span class="kerning-1">r</span>c<span class="kerning1">h</span><span class="kerning-1">i</span>ve</h1>
+			{% endblock %}
+			<ol id="archive-list" class="plain-list">
+			{% for article in articles %}
+				<li>
+					<h2><a href="/{{ article.url }}">{{ article.title }}</a></h2>
+					<div class="meta">
+						<a href="/category/{{ article.category }}.html">{{ article.category }}</a> ·
+						Tags:
+						<ul class="tags">
+						{% for tag in article.tags %}
+							<li><a href="/tag/{{ tag }}.html">{{ tag }}</a></li>
+						{% endfor %}
+						</ul>
+					</div>
+				</li>
+			{% endfor %}
+			</ol>
+		</div>
+	</div>
+</section>
+{% endblock %}

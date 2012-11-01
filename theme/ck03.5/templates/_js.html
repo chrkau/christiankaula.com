@@ -1,0 +1,12 @@
+<script type="text/javascript" charset="utf-8">
+	var eles = [], i, tweet;
+	$.domReady(function(){
+		$.ajax('/tweets.json', function(resp) {
+			for (i = 0; i < resp.tweets.length; i++) {
+				tweet = resp.tweets[i];
+				eles.push('<li><article><p>' + tweet.text + '</p><time class="meta">' + tweet.date + '</time></article></li>');
+			}
+			$('#tweet-list').html(eles.join(''));
+		});
+	});
+</script>

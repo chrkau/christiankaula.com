@@ -1,0 +1,44 @@
+<section id="aboutme" class="darkbg">
+	<div class="container_3">
+		<address class="grid_2 vcard">
+			<div>
+				<img src="/theme/images/me.jpg" alt="Photo of Christian Kaula" class="photo" />
+				<p class="note">
+					I make stuff simple.<br/>
+					Code, interfaces, things.<br/>
+					You can hire me.
+				</p>
+			</div>
+			<div class="adr">
+				<span class="fn">{{ AUTHOR }}</span> ·
+				<span class="street-address">{{ AUTHOR_STREET }}</span> ·
+				<span class="postal-code">{{ AUTHOR_ZIP }}</span>
+				<span class="locality">{{ AUTHOR_CITY }}</span> ·
+				<span class="country-name">{{ AUTHOR_COUNTRY }}</span>
+			</div>
+			<div>
+			{% for url, label in SOCIAL %}
+				<a href="{{ url }}" class="url">{{ label }}</a>
+				{% if not loop.last %}
+				·
+				{% endif %}
+			{% endfor %}
+			</div>
+			<div>
+				<a href="mailto:{{ AUTHOR_EMAIL }}" class="email">{{ AUTHOR_EMAIL }}</a> ·
+				<span class="tel"><span class="type">Mobile</span> {{ AUTHOR_PHONE }}</span>
+			</div>
+			{#
+			<div>
+				Twitter <a href="https://twitter.com/{{ AUTHOR_TWITTER }}" class="url">@{{ AUTHOR_TWITTER }}</a> ·
+				XMPP <a href="xmpp:{{ AUTHOR_XMPP }}" class="url">{{ AUTHOR_XMPP }}</a> ·
+			</div>
+			#}
+			<div>
+				<a href="http://christiankaula.com/" class="url">http://christiankaula.com</a>
+			</div>
+			<a href="/" id="logo"><img src="/theme/images/asterisk.png" alt="Logo of christiankaula.com" class="logo" /></a>
+		</address>
+	</div>
+</section>
+

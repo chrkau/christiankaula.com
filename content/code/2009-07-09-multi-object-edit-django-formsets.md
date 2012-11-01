@@ -10,6 +10,7 @@ So in case anybody else is in the same situation here is some code of how I did 
 
 	:::python
 	# forms.py
+	from django import forms
 	from django.forms.models import modelformset_factory
 
 	# creating a FormSet for a specific Model is easy

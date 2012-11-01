@@ -103,7 +103,8 @@ dt
 
 h1,
 h2,
-h3
+h3,
+h4
 	font-family: arvo
 	font-weight: bold
 	line-height: 130%
@@ -145,7 +146,15 @@ section,
 .article-detail
 	h1
 		+ .meta
-			margin-top: -30px
+			margin-top: -25px
+
+	h2,
+	h3,
+	h4
+		margin-top: 1.5em
+
+	header
+		margin-bottom: 2em
 
 .article-image
 	margin-top: 1em
@@ -153,7 +162,6 @@ section,
 .codehilite
 	background: #fdf6e3
 	font-size: $font-size-s
-	margin-bottom: 1em
 
 	pre
 		overflow: auto
@@ -195,6 +203,17 @@ section,
 	list-style: none
 	padding: 0
 	margin-left: 0
+
+
+@for $i from 1 through 3
+	.kerning#{$i}
+		letter-spacing: #{$i}px
+
+
+@for $i from 1 through 3
+	.kerning-#{$i}
+		letter-spacing: -#{$i}px
+
 
 .meta
 	font-size: $font-size-s

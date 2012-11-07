@@ -10,7 +10,6 @@ pelican==3.0.1
 pycrypto==2.6
 pytz==2012h
 smartypants==1.6.0.3
-solarized-pygment==0.1
 ssh==1.8.0
 typogrify==2.0.0
 webassets==0.7.1

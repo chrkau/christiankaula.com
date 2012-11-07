@@ -28,3 +28,8 @@ Data is translated to JSON and permanently cached on disk. So whenever the API i
 
 Future plans (of which I have many) include rewriting the backend to use a NoSQL data store. Right now it caches the scraped data as serialized chunks of data in a SQLite database which works but feels a bit too much for the job. So I was playing with the idea of giving [LevelDB](http://code.google.com/p/leveldb/) a shot. LevelDB seems to be the NoSQL equivalent to SQLite and should simplify storing the JSON data a bit. We will see how that turns out.
 
+
+**Update 2012-11-07**
+
+My uni decided to put the schedule and room information behind a login so I my scripts can no longer access those. As such the project is pretty much dead. This is especially sad since the tools the uni offers are - let's say lacking.
+

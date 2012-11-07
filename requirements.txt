@@ -1,0 +1,17 @@
+Fabric==1.4.3
+Jinja2==2.6
+Markdown==2.2.0
+Pygments==1.5
+Unidecode==0.04.9
+blinker==1.2
+docutils==0.9.1
+feedgenerator==1.2.1
+pelican==3.0.1
+pycrypto==2.6
+pytz==2012h
+smartypants==1.6.0.3
+solarized-pygment==0.1
+ssh==1.8.0
+typogrify==2.0.0
+webassets==0.7.1
+wsgiref==0.1.2

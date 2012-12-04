@@ -1,6 +1,6 @@
 {% extends "base.html" %}
 
-{% block title %}{{ article.title }} — {{ super() }}{% endblock %}
+{% block title %}{{ article.title|striptags }} — {{ super() }}{% endblock %}
 {% block description %}{% if article.description %}{{ article.description }}{% else %}{{ super() }}{% endif %}{% endblock %}
 {% block keywords %}{% for tag in article.tags %}{{ tag }}, {% endfor %}{{ super() }}{% endblock %}
 
@@ -24,7 +24,7 @@
 		{% if article.image and article.refurl %}
 		<a href="{{ article.refurl }}" class="image-link"><img src="/static/images/{{ article.image }}" alt="Image of {{ article.refurl }}" /></a>
 		{% elif article.image %}
-		<a href="/{{ article.url }}" class="image-link"><img src="/static/images/{{ article.image }}" alt="Image of {{ article.title }}" /></a>
+		<a href="/{{ article.url }}" class="image-link"><img src="/static/images/{{ article.image }}" alt="Image of {{ article.title|striptags }}" /></a>
 		{% endif %}
 		{{ article.content }}
 	</article>

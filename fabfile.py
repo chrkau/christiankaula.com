@@ -4,14 +4,14 @@ from fabric.api import cd, prefix, run, task
 ### atomic commands
 
 @task
-def clean():
-	run('rm -fr htdocs/*')
-
-@task
-def compile():
+def build():
 	with prefix('source ~/env/bin/activate'):
 		with cd('~/repo'):
-			run('pelican . -s pelicanconf.py -o ../htdocs -v')
+			run('pelican ./content -s pelicanconf.py -o ../htdocs -v')
+
+@task
+def clean():
+	run('rm -fr htdocs/*')
 
 @task
 def pull():
@@ -20,14 +20,17 @@ def pull():
 
 @task
 def setup_requirements():
-	run('pip install -r requirements.txt')
+	with prefix('source ~/env/bin/activate'):
+		with cd('~/repo'):
+			run('pip install -r requirements.txt')
 
 ### compound commands
 
 @task
 def deploy():
 	pull()
-	compile()
+	setup_requirements()
+	build()
 
 @task
 def rebuild():
